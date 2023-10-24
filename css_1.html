@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definindo o CSS</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style_css_1.css"/> 
+    <link rel="shortcut icon" href="imagens/icon.svg">
+</head>
+<body>
+    <nav id="menu"></nav>
+	<script>
+		fetch('menu.html')
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('menu').innerHTML = data;
+			});
+	</script>
+    <div class="corpo-css-1">
+    <header>
+        <div id="header">
+        <a id="inicio"><h1 class="h1-intro-css"><u>Introdução ao CSS</u></h1></a>
+        <img src="imagens/icon.svg" class="img-css-1">
+        <h4>por Fábio dos Reis da Bóson Treinamentos - transcrição por Ariana Mesquita</h4>
+        </div>
+    </header>
+    <nav class="nav-css">
+        <a href="#CSS"><h5>CSS</h5></a>
+        <a href="#sintaxe"><h5>Sintaxe</h5></a>
+        <a href="#exemplo"><h5>Exemplo</h5></a>
+        <a href="#seletores"><h5>Seletores</h5></a>
+        <a href="#convencoes"><h5>Convenções</h5></a>
+    </nav>
+    <main>
+        <div class="texto-principal">
+        <h2>TESTE A RESPONSIVIDADE DA PÁGINA - NÃO FOI FEITO MENU AINDA AQUI.</h2>
+        <a id="CSS"></a><h2>CSS - Cascading Style Sheets (Folhas de Estilo em Cascata)</h2>
+        <p class="p-css-1">&nbspDocumentos CSS são empregados para estilizar o conteúdo de um documento HTML, ou seja, controlar a apresentação de documentos de marcação.<br>
+            &nbspO HTML controla a estrutura de uma página ao passo que o CSS determina sua aparência.<br>
+            &nbspUma folha de estilos é uma coleção de regras de formatação aplicadas a um documento HTML. 
+        </p>
+        <p class="p-css-1">
+            &nbspAs regras CSS podem ser aplicadas de três formas distintas:
+        </p>
+            <ul class="ul-css-1">
+                <li><b>inline</b>: aplicados diretamente em um elemento HTML.</li>
+                <li><b>incorporador</b>: O elemento style permite aplicar várias regras de uma vez no próprio documento HTML.</li>
+                <li><b>folha de estilo externa</b>: um documento com extensão .css permite aplicar regras a um website inteiro de uma vez.</li>
+            </ul>
+        <p class="p-css-1">
+            &nbspOs estilos são aplicados na ordem que são encontrados, cascateando estilos externos até os estilos inline.
+        </p>
+        <h4><a href="#inicio">Voltar para o início da página.</a></h4>
+        <a id="sintaxe"><h2>Sintaxe de uma regra CSS</h2></a>
+        <p class="p-css-1">
+            &nbspRegra CSS é a unidade básica de construção de uma folha de estilos. <br>
+            &nbspSintaxe de uma regra:<br>
+            <br>
+            <code>seletor {<br>
+                &nbsp propriedade: valor;<br>
+            }</code><br><br>
+            &nbspA regra é composta de um <b><i>seletor</i></b> (alvo da regra) e de uma <b><i>declaração</i></b> (parâmetros de estilo).<br>
+            &nbspA declaração, por sua vez, é composta por um par <b><i>propriedade: valor</i></b> 
+        </p>
+        <h4><a href="#inicio">Voltar para o início da página.</a></h4>
+        <a id="exemplo"><h2>Exemplo de uma regra CSS</h2></a>
+        <p class="p-css-1">
+            &nbspAbaixo temos uma regra CSS que aplica três declarações: <br><br>
+            <code>
+                p {<br>
+                    &nbsptext-align: center;<br>
+                    &nbspcolor: yellow;<br>
+                    &nbspfont-size: 20px;<br>
+                }
+            </code><br>
+            <ul>
+                <li>Seletor: elemento p(regra aplicada a parágrafos)</li>
+                <li>Declarações: text-align; center; color; yellow; font-size: 20px;</li>
+                <li>Propriedades: text-align, color, font-size.</li>
+            </ul>
+        </p>
+        <h4><a href="#inicio">Voltar para o início da página.</a></h4>
+        <a id="seletores"><h2>Tipos de Seletores</h2></a>
+        <ol class="ol-css-1">
+            <li><b>Seletor Universal</b>: Representa todos os elementos.<br>
+                    Simbolizado pelo *.</li> <br>
+            <code>* {<br>
+                &nbspcolor: green;<br>
+                }</code> <br><br>
+            <li><b>Seletor de Tipo</b> (ou de <b>Elemento</b>): Representa um determinado elemento.</li><br>
+            <code>p { <br>
+                &nbspcolor: red;<br>
+                }<br><br>
+                h1 { <br>
+                &nbspcolor: yellow;<br>
+                }
+            </code><br><br>
+            <li><b>Seletor de Classe</b>: Aplica estilo a elementos com o atributo <b>class</b> definido.</li><br>
+            <code>
+                .verde {<br>
+                    &nbspcolor: green;<br>
+                } <br><br>
+                h1.verde {<br>
+                    &nbsp color: green;<br>
+                }
+            </code><br><br>
+            <li><b>Seletor de ID</b>: Aplica estilo a elementos com o atributo <b>id</b> definido.</li><br>
+            <code>
+                #corAzul {<br>
+                    &nbsp color: blue;<br>
+                }<br><br>
+                h1#corAzul { <br>
+                    &nbsp color: blue;<br>
+                }
+            </code>
+        </ol>
+        <h4><a href="#inicio">Voltar para o início da página.</a></h4>
+        <a id="convencoes"><h2>Convenções para nomes de id e class</h2></a>
+        <p class="p-css-1">
+            &nbspAlgumas convenções importantes para seguir ao criar nomes para atributos <i>id</i> e <i>class</i>:
+            <ul class="ul-css-1">
+                <li>Não usar espaços em branco</li>
+                <li>Não empregar caracteres especiais</li>
+                <li>CSS é case-sensitive</li>
+            </ul>
+        </p>
+        <h4><a href="#inicio">Voltar para o início da página.</a></h4>
+        </div>
+    </main>
+    <footer>
+        <div class = "footer">
+            <h4><a href="index.html" class="voltar">Vamos voltar para a página inicial</a></h4>
+        </div>        
+    </footer>
+    </div>
+</body>
+</html>

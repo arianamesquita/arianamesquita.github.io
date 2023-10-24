@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html lan="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulário de Cadastro</title>
+	<link rel="shortcut icon" href="imagens/pencil.svg">
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/style_form2.css">
+</head>
+<body>
+	<nav id="menu"></nav>
+	<script>
+		fetch('menu.html')
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('menu').innerHTML = data;
+			});
+	</script>
+	<main>
+		<form action="#" method="post">
+			<fieldset>
+				<legend>Formulário de Satisfação do Aluno</legend>
+				<fieldset>
+					<legend>Dados Pessoais</legend>
+					<p><label for="nome" name="nome">Nome do Aluno</label><br>
+						<input id="nome" type="text" name="nome" placeholder="insira seu nome aqui" autocomplete="off" 
+							maxlength="50" size="100" required=""/><br></p>
+					<p><label for="email" name="email">E-mail</label><br>
+						<input id="email" type="email" name="email" placeholder="insira seu número de e-mail" 
+							autocomplete="off" maxlength="20" size="50" required=""/><br></p>
+					<p><label for="curso" name="graduação">Curso de Graduação</label><br>
+						<input id="curso" type="email" name="graduação" placeholder="insira o nome do curso" 
+							autocomplete="off" maxlength="20" size="50" required=""/><br></p>
+				</fieldset>
+				<fieldset>
+					<legend>Professor e Avaliação</legend>
+					<p>
+						<label for="professor" name="professor">Professor</label><br>
+						<select>
+							<option value="Junio">Prof. Junio</option>
+							<option value="Cristiane">Profa. Cristiane</option> 
+							<option value="Jaime">Prof. Jaime</option>
+							<option value="Jorcivan">Prof. Jorcivan</option>
+							<option value="Werica">Profa. Werica</option>
+							<option value="Julio">Prof. Julio<option>
+							<option value="Gabriel">Prof. Gabriel</option>
+							<option value="Vivian">Profa. Vivian<option>
+						</select>
+					</p>
+					<p>
+						<label for="nota" name="nota">Nota (onde 0 é a pior nota e 5 é a melhor):</label><br>
+						<input type="radio" name="nota" value="0" class="radio-input"/>
+						<label class="radio-label">0</label>
+						<input type="radio" name="nota" value="1" class="radio-input"/>
+						<label class="radio-label">1</label>
+						<input type="radio" name="nota" value="2" class="radio-input"/>
+						<label class="radio-label">2</label>
+						<input type="radio" name="nota" value="3" class="radio-input"/>
+						<label class="radio-label">3</label>
+						<input type="radio" name="nota" value="4" class="radio-input"/>
+						<label class="radio-label">4</label>
+						<input type="radio" name="nota" value="5" checked class="radio-input"/>
+						<label class="radio-label">5</label>
+					<p>
+						<label for="mensagem" name="mensagem">Mensagem Avaliativa</label><br>
+						<textarea id="telefone" type="text" name="mensagem" placeholder="digite uma mensagem" cols="100" rows="10"></textarea><br>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend>Submeter ou Limpar Campos</legend>
+					<p class="botoes">
+						<input type="submit" name="enviar" class="enviar" value="Enviar"/>
+						<input type="reset" name="limpar" class="limpar" value="Limpar"/>
+					</p>
+				</fieldset>
+				<br><a href="index.html" target="_self" class="voltar"><b>Voltar para a página inicial.</b></a><br>
+			</fieldset>
+		</form>
+
+	</main>
+</body>

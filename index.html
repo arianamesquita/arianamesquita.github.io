@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala de Aula</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<nav id="menu"></nav>
+	<script>
+		fetch('menu.html')
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('menu').innerHTML = data;
+			});
+	</script>
+    <main>
+        <p class="label">Deixe o cursor em cima do quadro para ver o nome da atividade.</p>
+        <ul class="menu_block">
+            <li><a href="page-one.html"><p class="frame" title="Primeira Versão da Página Inicial" >
+                Antiga Página Inicial<br><img src="imagens/pencil.svg" class="img-index"></p></a></li>
+            <li><a href="page-link.html"><p class="frame" title="Tags - HTML">
+                Atividade 11/08 a 17/08 <br><img src="imagens/pencil.svg" class="img-index"></p></a></li>
+            <li><a href="page-link-2.html"><p class="frame" title="Versões - HTML">
+                Atividade 17/08 a 25/08 <br><img src="imagens/pencil.svg" class="img-index"></p></a></li>
+            <li><a href="angular.html"><p class="frame" title="Manual Angular">
+                Atividade 25/08 a 30/08 <br><img src="imagens/pencil.svg" class="img-index"></p></a></li>
+            <li><a href="to-do-list.html"><p class="frame" title="Modelos de Listas">
+                Atividade 01/09 a 07/09 <br><img src="imagens/pencil.svg" class="img-index"></p></a></li>
+            <li><a href="form1.html"><p class="frame" title="Formulário 1 e 2">
+                Atividade 08/09 a 14/09 <br><img src="imagens/pencil.svg" class="img-index"></p></a></li>
+            <li><a href="form2.html"><p class="frame" title="Formulário 3, 4 e 5">
+                Atividade 08/09 a 14/09 <br><img src="imagens/pencil.svg" class="img-index"></p></a></li>
+            <li><a href="css_1.html"><p class="frame" title="Introdução ao CSS">
+                Atividade 15/09 a 21/09 <br><img src="imagens/pencil.svg" class="img-index"></p></a></li>
+            <li><a href="css_1.html"><p class="frame" title="Menu responsivo versão 1">
+                Atividade 22/09 a 28/09 <br><img src="imagens/pencil.svg" class="img-index"></p></a></li>
+            <li><a href="index.html"><p class="frame" title="Atividades I de CSS - esta página inicial">
+                Atividade 29/09 a 05/09 <br><img src="imagens/pencil.svg" class="img-index"></p></a></li>
+            <li><a href="form2.html"><p class="frame" title="Atividades II - Estilizando o form2">
+                Atividade 29/09 a 05/09 <br><img src="imagens/pencil.svg" class="img-index"></p></a></li>
+            <li><a href="projeto_final.html"><p class="frame" title="Atividades I - Projeto de Sala e Angular">
+                Projetos Finais <br><img src="imagens/pencil.svg" class="img-index"></p></a></li>
+            <li><a href="animation.html"><p class="frame" title="Atividades II - Animação">
+                Animação CSS <br><img src="imagens/pencil.svg" class="img-index"></p></a></li>
+        </ul>
+    </main>
+</body>
+</html>

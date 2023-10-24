@@ -1,0 +1,67 @@
+.body-form1{
+    background-color: #5F9EA0;
+}
+.header-form1{
+    background-color: lightgray;
+    margin: 10px 180px 10px 180px;
+    border-radius: 50px; 
+    height: 180px;
+}
+.h1-form1-1{
+    margin: 30px 0px 10px 150px;
+    padding-top: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.h2-form1-1{
+    margin: 25px 0px 10px 150px;
+    padding-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.div-form1-1{
+    background-color: lightgray;
+    margin: 10px 180px 10px 180px;
+    border-radius: 50px;
+    height: 700px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size: 14;
+}
+.form1-1{
+    padding-top:20px;
+}
+fieldset{
+    border-radius: 30px;
+}
+.select-form1{
+    font-size: 16;
+    width: 300px;
+}
+.button-enviar{
+    width:150px;
+    font-size: 18px;
+    background-color:#5B9A8B;
+    border-radius:15px;
+}
+.button-limpar{
+    width:150px;
+    font-size: 18px;
+    background-color:#FA9884;
+    border-radius:15px;
+}
+#msg-field{
+    width: 700px;
+}
+#nome-field{
+    width: 700px;
+}
+#telefone-field{
+    width: 700px;
+}
+.footer {
+    background-color: lightgray;
+    border-radius: 30px;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    padding-left: 100px;
+    height: 50px;
+}

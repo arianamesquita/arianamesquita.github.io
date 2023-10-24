@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lan="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulário de Satisfação do Cliente - All Vegan Store</title>
+	<link rel="shortcut icon" href="imagens/pencil.svg">
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/style_form1.css"/> 
+</head>
+<body class="body-form1">
+	<nav id="menu"></nav>
+	<script>
+		fetch('menu.html')
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('menu').innerHTML = data;
+			});
+	</script>
+	<header class="header-form1">
+        	<img class="img-icon-1" src="imagens/icon-cv-1.svg" width=100 style="margin: 30px 0px 10px 20px; position: absolute;">
+		<h1 class="h1-form1-1" ><i><u>All Vegan Store</u></i></h1>
+		<h2 class="h2-form1-1">
+			<i>Formulário de Satisfação do Cliente</i></h2>
+	</header><br>
+	<div class="div-form1-1">
+	<form action="#" method="post" class="form1-1">
+		<fieldset>
+			<legend>Formulário de Satisfação do Cliente</legend>
+			<fieldset>
+				<legend>Dados Pessoais</legend>
+				<p>
+					<label for="nome" name="nome" alt="Próximo campo de texto é para inserir o nome no formulário.">
+						Nome do Cliente</label><br>
+					<input id="nome-field" type="text" name="nome" placeholder="insira seu nome aqui" autocomplete="off" 
+						maxlength="100" required=""/><br>
+				</p>
+				<p>
+					<label for="telefone" name="telefone" alt="Próximo campo de texto é para inserir o telefone no formulário">
+						Telefone</label><br>
+					<input id="telefone-field" type="number" name="telefone" placeholder="insira seu número de telefone" 
+						autocomplete="off" maxlength="20" size="50" required=""/><br>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Produto e Avaliação</legend>
+				<p>
+					<label for="produto" name="produto" alt="Campo de seleção para escolha do produto para avaliar">
+						Produto</label><br>
+					<select class="select-form1">
+						<option value="pizzaria">Pizza</option>
+						<option value="sanduicheria">Sanduíche</option> 
+						<option value="cozinha">Macarrão</option>
+						<option value="frios">Salada</option>
+						<option value="cozinha">Caponata de Berinjela</option>
+						<option value="frios">Aperitivos em Geral<option>
+					</select>
+				</p>
+				<p>
+					<label for="nota" name="nota" alt="Valor da nota">
+						Nota (onde 0 é a pior nota e 5 é a melhor):</label><br>
+					<input type="radio" name="nota" value="0"/>0
+					<input type="radio" name="nota" value="1"/>1
+					<input type="radio" name="nota" value="2"/>2
+					<input type="radio" name="nota" value="3"/>3
+					<input type="radio" name="nota" value="4"/>4
+					<input type="radio" name="nota" value="5" checked/>5
+				<p>
+					<label for="mensagem" name="mensagem" alt="Próximo campo para inserção de mensagem avaliativa">
+						Mensagem Avaliativa</label><br>
+					<textarea id="msg-field" type="text" name="mensagem" placeholder="digite uma mensagem"
+						rows="10"></textarea><br>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Submeter ou Limpar Campos</legend>
+				<p align="center">
+					<input type="submit" name="enviar" value="Enviar" class="button-enviar"/>
+					<input type="reset" name="limpar" value="Limpar" class="button-limpar"/>
+				</p>
+			</fieldset>
+		</fieldset>
+	</form>
+    <footer>
+        <div class = "footer">
+            <a href="index.html" class="voltar">Vamos voltar para a página inicial</a>
+        </div>        
+    </footer>
+	</div>
+</body>
+</html>

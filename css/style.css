@@ -1,0 +1,207 @@
+/*estilização feita em sala com alguns ajustes*/
+/*no body temos duas imagens, por isso a diferença*/
+body{
+    background-color: #3EECAC;
+    background-image: -webkit-linear-gradient(117deg, #3EECAC 0%, #EE74E1 100%);
+    background-image: -moz-linear-gradient(117deg, #3EECAC 0%, #EE74E1 100%);
+    background-image: -o-linear-gradient(117deg, #3EECAC 0%, #EE74E1 100%);
+    background-image: linear-gradient(117deg, #3EECAC 0%, #EE74E1 100%);
+    background-position: 100%;
+    margin: 0;
+    background-image: url(../imagens/RM_menor.png);
+    background-position: left;
+    background-size: 17%;
+    background-repeat:no-repeat;
+    background-position-y: 225px;
+}
+
+.ul-menu{
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+
+.menu-barra{
+    background-color: black;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1-menu, .menu_nome{
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+}
+
+.menu-barra, .ul-menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.li-menu{
+    padding: 0 15px;
+}
+
+.h1-menu{
+    margin: 0;
+    padding: 10px;
+}
+button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+.frame{
+    border-style: dashed;
+    border-color: rgb(207, 86, 0);
+    background-color:rgba(23, 52, 85, 0.747);
+    width: 250px;
+    height: 120px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;    
+    border-width: 5px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu_block{
+    width: 75%;
+    margin: 2% 30px 30px 15%; 
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    columns: 3;
+}
+.img-index{
+    width: 20%;
+    height: auto;
+    background-color: chocolate;
+    margin-top: 15px;
+}
+.imagem{
+    width: 50%;
+}
+.label{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;  
+    font-weight: bold;
+}
+
+.li-menu :hover,
+.h1-menu :hover,
+button :hover{
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(211, 11, 11, 0.507);
+    border-radius: 30px;
+    font-style: italic;
+
+}
+
+button:focus ~.ul-menu{
+    height: 260px;
+}
+
+.voltar{
+    background-color: blue;
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: lightgray;
+}
+
+.menu-angular{
+    background-color:#D8D9DA;
+    border-radius: 15px; 
+    margin:20px 20px 20px 125px;
+    width: 1100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.chamada{
+    font-family: 'Courier New', Courier, monospace;
+    color: #1C1C1C;
+    font-size: medium;
+}
+.artigo{
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1C1C1C;
+    text-align: justify;
+}
+
+@media (max-width: 700px) {
+    .menu-barra, .ul-menu, button{
+        flex-direction: column;
+    }
+    .ul-menu{
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+    .menu-barra{
+        padding-top: 0px;
+        align-items: flex-start;
+    }
+    .h1-menu{
+        margin: 10px;
+    }
+    button{
+        display: flex;
+    }
+    .li-menu, .ul-menu{
+        width: 100%;
+    }
+    .frame{
+        border-style: dashed;
+        border-color: rgb(207, 86, 0);
+        background-color:rgba(23, 52, 85, 0.747);
+        width: 250px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.2rem;    
+        border-width: 5px;
+        border-radius: 20px;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 5px;
+    }
+    .menu_block{
+        width: 75%;
+        height: 1250px;
+        margin: 5% 30px 30px 15%; 
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        columns: 1;
+    }
+    .label{
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.2rem;  
+        font-weight: bold;
+    }
+    .img-index{
+        width: 15%;
+        height: auto;
+        background-color: chocolate;
+        margin-top: 20px;
+    }
+}

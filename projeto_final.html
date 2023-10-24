@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/icon2.svg">
+    <title>Projeto de Sala</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projeto_final.css">
+</head>
+<body>
+    <nav id="menu"></nav>
+	<script>
+		fetch('menu.html')
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('menu').innerHTML = data;
+			});
+	</script>
+    <div class="div_projeto_final">
+        <h1>Projeto de sala - HTML/ CSS/ JavaScript </h1>
+
+        <img src="imagens/final/Projeto_Final_page-0001.jpg" id="projeto_final_1" height="600">
+        <img src="imagens/final/Projeto_Final_page-0002.jpg" id="projeto_final_1" height="600">
+        <img src="imagens/final/Projeto_Final_page-0003.jpg" id="projeto_final_1" height="600">
+        <img src="imagens/final/Projeto_Final_page-0004.jpg" id="projeto_final_1" height="600">
+    </div>
+    
+</body>
+</html>

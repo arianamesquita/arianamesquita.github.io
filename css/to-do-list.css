@@ -1,0 +1,63 @@
+.body-todo{
+    background-color: #5F9EA0;
+}
+.header-todo{
+    background-color: lightgray;
+    border-radius: 30px;
+    height: 120px;
+    margin:0 170px 0 170px;
+}
+.h1-todo-1{
+    margin: 35px 0px 10px 240px; 
+    padding-top: 35px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.div-todo-1{
+    margin:50px 170px 0 170px; 
+    background-color:#D8D9DA; 
+    border-radius: 30px;
+}
+.p-todo-1{
+    font-size: 14;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1C1C1C;
+    text-align: justify;
+    margin: -150px 30px 20px 320px;
+}
+.p-todo-2{
+    font-size: 14;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1C1C1C;
+    text-align: justify;
+    margin: -220px 45px 20px 470px;
+}
+.p-todo-3{
+    font-size: 14;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1C1C1C;
+    text-align: justify;
+    margin: 0px 45px 20px 470px;
+}
+.h3-todo{
+    margin: 0px 45px 0px 70px;
+}
+.ul-todo{
+    margin: -20px 20px 10px 100px; 
+    font-size: 20px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style-type: decimal;
+}
+.p-todo-4{
+    margin: 20px 20px 10px 0;
+}
+.ol-todo{
+    font-size: 20px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style-type: square; 
+}
+.ul-todo-2{
+    margin: 0px 20px 10px 100px; 
+    font-size: 18px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style-type: circle;
+}

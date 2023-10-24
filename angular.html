@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalando Angular</title>
+    <link rel="shortcut icon" href="imagens/icon.svg">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body bgcolor=#5F9EA0>
+	<nav id="menu"></nav>
+	<script>
+		fetch('menu.html')
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('menu').innerHTML = data;
+			});
+	</script>
+    <header>
+        <div class = "menu-angular">
+            <div class="chamada">
+                <h2>Tutorial sobre o Angular</h2>
+                <h4>Data: 29/08/2023 -- Por: Ariana Mesquita</h4>
+            </div>
+            <div class="artigo">
+                <article style="margin:20px 20px 20px 20px;">
+                    <br>
+                    <h2><u>1. Sobre o Angular</u></h2>
+                    Angular é um framework para densenvolvimento front-end muito popular entre os desenvolvedores, 
+                    o Angular é mantido pelo Google e foi lançado pela primeira vez em 2009 . É um framework de 
+                    código aberto que usa TypeScript e JavaScript e é famoso por criar aplicativos de página
+                    única.<br>
+                    <br>
+                    Sites e aplicativos como eBay e Airbnb, Upwork, Lego, PayPal, Netflix usam o Angular, que 
+                    reflete o quanto ele é poderoso em construção para escala.<br>
+                    <br>
+                    A curva de aprendizado pode ser íngreme, no entanto, e o código às vezes pode ser volumoso para 
+                    compilar.
+                    <br>
+                    <h3><b>1.1 Sobre as versões do Angular</b></h3>
+                    Originalmente foi criado o chamado AngularJS mas depois reformaram inicialmente para retirar
+                    o JS do nome e reduzir a confusão que ela estava causando por não ser somente voltada para o 
+                    JavaScript. A próxima versão lançada foi a <b>Versão 2.0</b> que trouxe mudanças drásticas 
+                    e criou algumas controvérsias entre os desenvolvedores. <br><br>
+                    Foi lançada então a <b>Versão 4.0</b> ignorando a versão 3 que era incompatível com a 2, a 4
+                    já veio compatível com a versão 2.0. Nela introduziram Solicitações HTTP e novos eventos para 
+                    Guardas e Resoluções. Em 2017 foi lançada a <b>Versão 5.0</b> com suporte para aplicativos
+                    progressivos e melhorias no Material Design. <br><br>
+                    Após várias versões e melhorias, a atual como pode ser conferido no site 
+                    <a href="https://angular.io/guide/releases#support-policy-and-schedule">está sendo a Versão 16</a>. 
+                    Os sites de desenvolvedores falam sobre as <a href="https://andrewrosario.medium.com/confira-as-grandes-novidades-do-angular-16-6e51b7d8b27c">
+                        grande novidades que esta versão traz. </a>
+                    <br>
+                    <br>
+                    Para instalar o Angular sem ser alguma versão específica é necessário instalar inicialmente o 
+                    Node.js, é através dele que a instalação é feita atualmente. O próprio site do aplicativo
+                    orienta essa forma de instalação como pode verificar
+                    <a href="https://angular.io/guide/setup-local#install-the-angular-cli" target="_blank"> 
+                        aqui no site oficial</a>.
+                    <br>
+                    Vamos iniciar instalando o Node.js então.
+                </article>
+                <h2 style="margin:20px 20px 20px 20px;">2. Instalando o Node.js</h2>
+                <p style="margin:20px 20px 20px 20px;">
+                    Para instalar o Node.js temos o <a href="https://nodejs.org/en" target="_blank">Site 
+                    Oficial</a> também apresentando na imagem abaixo: <br>
+                    <img src="imagens/node.jpeg" alt="imagem do site do Node.js" width="1000" class="imagem">
+                    Após fazer o download e iniciar a instalação aparece a tela seguinte: <br>
+                    <img src="imagens/node2.jpeg" alt="seguindo a instalação do node.js" class="imagem"><br>
+                    O <i>wizard</i> da instalação só informa que ele ajuda tanto a instalar como a reparar e 
+                    desinstalar o Node.js caso seja o que o usuário precisa. Só clicar em <i>"next"</i> e 
+                    continuar. <br>
+                    A próxima tela que aparece é a seguinte: <br>
+                    <img src="imagens/node3.png" alt="tela de licença do node" class="imagem"><br>
+                    Nesta tela informam os acordos e licenças para instalação, caso queira, leia com atenção
+                    e depois marque a caixinha onde aceita <i>"I accept the terms in the License Agreement"</i>
+                    e clique em <i>"Next"</i> para continuar. <br>
+                    Continuando, após selecionar em qual pasta quer salvar os arquivos de instalação, 
+                    essa é a próxima tela a aparecer: <br>
+                    <img src="imagens/node4.png" alt="customização do setup, tela aparece após escolher onde a pasta de instalação deve ficar" class="imagem"><br>
+                    Aqui importante notar que o aplicativo requer 10MB de espaço livres para seguir com a instalação. Faça 
+                    os ajustes de acordo com o que achar necessário e depois clique em <i>"Next"</i>. Mesmo sem nenhuma
+                    modificação ele instalará normalmente fazendo as escolhas que o sistema achar necessário.
+                    Após clicar em <i>"Next"</i> aparece a tela abaixo: <br>
+                    <img src="imagens/node5.png" alt="tela de instalação que oferece para instalar todos as demais bibliotecas que 
+                        o sistema precisa para rodar" class="imagem"> <br>
+                    Na tela acima, se preferir que o sistema instale todas as bibliotecas auxiliares a mais que precisa como 
+                    ele informa, por compilar em C/C++ ele vai instalar alguns módulos adicionais e algumas ferramentas como
+                    Python. Após escolher se vai ou não deixar ele fazer automaticamente, clicar em <i>"Next"</i> para continuar. <br>
+                    A tela abaixo é a próxima a aparecer: <br>
+                    <img src="imagens/node6.png" alt="tela final de instalação, ajustes feitos, só deixar ele processar" class="imagem"> <br>
+                    Após a tela acima ele vai processar e executar a instalação de acordo com as configurações
+                    solicitadas. Aqui finaliza a instalação do node. 
+                </p>
+
+                <h2 style="margin:20px 20px 20px 20px;">3. Instalando o Angular</h2>
+                <p style="margin:20px 20px 20px 20px;">
+                    Lembrando novamente que pode ser conferido no site do Angular caso surjam dúvidas, aqui está
+                    o link do <a href="https://angular.io/guide/setup-local#install-the-angular-cli" 
+                    target="_blank">Site Oficial</a>
+                    já levando direto para onde informa como instalar o Angular.
+                    Para instalar o Angular agora pode conferir dentro da sua IDE de escolha, utilizando o console
+                    e vai colocar o código: <br>
+                    <br>
+                    <code style="margin:0 0 0 20px; color: darkblue; background-color: darkgrey; font-size: 18px;">
+                        npm install -g @angular/cli
+                    </code><br>
+                    <br>
+                    Algo similar à imagem a seguir é o que vai aparecer depois de finalizado: <br>
+                    <img src="imagens/Captura de tela 2023-08-29 141605.png" alt="imagem do console após finalizar a 
+                        instalação." class="imagem"> <br>
+                    Agora a instalação está completa e já é possível abrir projetos em Angular, lembrando que para 
+                    iniciar e rodar projetos nele, também é indicado no site do Angular através do link abaixo:
+                    <a href="https://angular.io/guide/setup-local#create-a-workspace-and-initial-application" 
+                        target="_blank">Criar workspace e iniciar aplicações com Angular.
+                    </a><br>
+                    <br>
+                </p>
+                <h2 style="margin:20px 20px 20px 20px;">4. Criando um projeto em Angular</h2>
+                <p style="margin:20px 20px 20px 20px;">
+                    Para criar um novo workspace e iniciar uma aplicação é necessário digitar no console ou barra de 
+                    comando o seguinte código: <br><br>
+                    <code style="margin:0 0 0 20px; color: darkblue; background-color: darkgrey; font-size: 18px;">
+                        ng new "nome_da_aplicação"
+                    </code><br>
+                    <br>
+                    Vamos criar aqui um projeto chamado <i>"landind-page"</i>. <br>
+                    <img src="imagens/novo-angular.png" alt="projeto criado utilizando o angular" class="imagem"><br>
+                    É possível ver na segunda linha o código solicitando a criação do projeto, logo após o enter 
+                    o sistema perguntou na terceira linha "Gostaria de habilitar o preenchimento automático? Ele 
+                    organizará o terminal para que quando digitar algum comando Angular CLI e pressionar TAB vai 
+                    aparecer as opções possíveis e completar argumentos." Onde eu escolhi a opção Y de <i>"Yes"</i>
+                    que aparece no canto direito da imagem na cor azul. <br>
+                    <br>
+                    Após alguns comandos internos, abaixo de onde está escrito <i>"source &lt (ng completion script)"</i>
+                    aparece a outra pergunta feita pelo sistema "Quer adicionar o roteamento do Angular?" eu escolhi 
+                    novamente o Y de <i>"Yes"</i>. A última pergunta que o sistema faz é "Qual modelo de estilização 
+                    você quer utilizar?", onde apareceram as opções CSS, SCSS, ACSS, neste momento eu selecionei a
+                    opção CSS e dei enter. <br>
+                    <br>
+                    O sistema iniciou a criação do projeto. A imagem abaixo mostra a forma como aparece quando ele 
+                    finaliza. <br>
+                    <br>
+                    <img src="imagens/novo-angular-final.png" alt="momento final da instalação" class="imagem"><br>
+                    No fim ele deu alguns avisos e inicializou com sucesso o git.
+                </p>
+                <h2 style="margin:20px 20px 20px 20px;">5. Executando aplicações em Angular</h2>
+                <p style="margin:20px 20px 20px 20px;">
+                    Para executar uma aplicação angular o desenvolvedor digita um comando no terminal e digita 
+                    enter para ele processar, o comando é o seguinte: <br>
+                    <br>
+                    <code style="margin:0 0 0 20px; color: darkblue; background-color: darkgrey; font-size: 18px;">
+                        ng serve
+                    </code><br>
+                    <br>
+                    O resultado aqui foi o que aparece na imagem abaixo, ele aparece um erro por conta de estar
+                    rodando dentro de outro projeto com o nome "index.html", mas ainda assim ele está funcionando. <br>
+                    <img src="imagens/angular-rodando.png" alt="projeto rodando através do ng serve" class="imagem"><br>
+                    Nas próximas imagens é possível ver como está rodando. Coloquei uma frase de teste no código
+                    da aplicação e conferi na página web:
+                    <img src="imagens/code.png" alt="código do projeto Angular com um testando" class="imagem"><br>
+                    <img src="imagens/page.png" alt="print da página html do projeto Angular rodando" class="imagem"><br>
+                    Estamos prontos para iniciar uma aplicação em Angular agora. 
+                    <br>
+                    <a href="index.html" class="voltar"><h2>
+                        Para voltar para a página inicial, clique aqui.</h2></a>
+                    <br>
+                </p>
+            </font>
+
+
+        </div>
+    
+
+    </header>
+
+
+    
+</body>
+</html>

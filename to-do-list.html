@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="shortcut icon" href="imagens/icon.svg">
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/to-do-list.css"/>
+</head>
+<body class="body-todo">
+	<nav id="menu"></nav>
+	<script>
+		fetch('menu.html')
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('menu').innerHTML = data;
+			});
+	</script>
+	<header class="header-todo">
+		<h1 class="h1-todo-1"><i><u>Vamos falar sobre carros antigos?</u></i></h1>
+		<img src="imagens/veiculos/car1.svg" alt="icone de carro para ilustrar" height="100" id="img-1" 
+			style="position: absolute; margin: -65px 50px 0 800px;">
+		<img src="imagens/veiculos/car1.svg" alt="icone de carro para ilustrar" height="100" 
+			style="position: absolute; margin: -65px 100px 0 80px;">
+	</header>
+	<div class="div-todo-1">
+		<img src="imagens/veiculos/cavalo-fogo.jpg" height="200" style="margin: 20px 100px 0 80px;"
+			 alt="desenho anos 80 - cavalo de fogo - brincando sobre veículos antigos">
+		<p class="p-todo-1">
+			Como não lembrar da Sarah montada no Cavalo de Fogo quando fala de veículos antigos?
+			É uma das primeiras coisas na minha mente, pelo menos.<br>
+			Tá bem, tá bem.. Cavalos não são veículos, só foram utilizados muito tempo assim sem merecer,
+			porque nenhum mal fizeram para isso, rsrs. Mas voltando ao tema veículos antigos.
+		</p>
+		<br><br><br>
+		<img src="imagens/veiculos/de-volta-futuro.png" height="200" style="margin: 60px 100px 0 80px;"
+			alt="filme anos 80 - de volta para o futuro - brincando sobre veículos antigos">
+		<p class="p-todo-2">
+			Podemos sempre tentar outra abordagem como falar sobre De volta para o Futuro ou 60 segundos,
+			mas a Eleanora merece um tópico especial na lista ordenada de não-ordenadas.
+		</p>
+		<br><br><br><br>
+		<p class="p-todo-3"><b>
+			Mas, vamos deixar de enrolação e ir logo ao que nos interessa aqui.
+			O tópico da vez são listas ordenadas, então vamos aproveitar e falar de algo super legal
+			e bacana, utilizar fontes e imagens e fazer aquela listinha de respeito.
+		</b></p>
+		<br><br>
+		<h3 class="h3-todo"><b><u>Carros Antigos - Pela ordem de escolha aleatória do autor mesmo: </u></b></h3>
+		<br><br>
+		<ul class="ul-todo"><b>
+			<li>Fusca </b>
+				<img src="imagens/veiculos/fusca.png" alt="fusca praiano com prancha de surf - desenho artístico"
+					width="400" style="margin: 0 0 0 -100px;">
+				<p class="p-todo-4">
+					Aquele queridinho queridão maravilhoso que todo mundo uma vez na vida deveria ter, dirigir
+					viajar nele, talvez até morar. Muito totalmente maravilhoso. Do começo ao fim. <br>
+					Algumas curiosidades sobre ele:
+				</p>
+				<ol class="ol-todo">
+					<li>O nome Fusca em inglês é <b>"Beetle"</b> e significa besouro, na Espanha é chamado
+						de "Escarabajo" que também significa besouro. No Brasil que erramos o nome dele.</li>
+					<li>O primeiro fusca foi produzido no ano de 1938 na Alemanha. </li>
+					<li>A ordem para o desenvolvimento do veículo foi dada por Adolf Hitler que queria 
+						um carro barato e simples para as estradas recém-construídas da Alemanha.</li>
+					<li>O recorde de maior número de pessoas dentro de um fusca é de 26 pessoas.</li>
+					<li>O Brasil detém o recorde do maior desfile de um carro do mesmo modelo.
+						Em 1995, 2.728 fuscas desfilaram em Interlagos em homenagem a Ayrton Senna.	</li>
+					<li>O design do motor do Fusca se manteve o mesmo por 60 anos.</li>
+					<li>O modelo já foi utilizado para passeios aquáticos por ser muito bem selado.</li>
+				</ol>
+			</li>
+			<br>
+			<li><b>Fusca Herbie</b><br><br>
+				<img src="imagens/veiculos/herbie.png" alt="fusca Herbie do filme" width="400" style="margin: 0 0 0 -50px;">
+				<p class="p-todo-4">
+					Quem ainda não assistiu filmes vintage, principalmente os do Herbie, número 53, do 
+					Fusca falante, não assistiu filmes ainda. Blockbusters antigos onde o primeiro foi lançado
+					em 1968, os demais em 1974, 1977, 1980, 1997 e um último em 2005 para atender à geração 
+					dos anos 1980 que muito pediam mais um filme. 
+					Sim, sim, o primeiro tópico já foi Fusca, mas o Herbie é especial como a Eleanora que 
+					vai aparecer por aqui ainda. <br>
+					Algumas curiosidades sobre Herbie, o Fusca Falante:
+				</p>
+				<ol class="ol-todo">
+					<li>Herbie é um fusca falante com o timbre do número 53 referente ao jogador de baseball
+						Don Drysdale que utiliza este número em seu uniforme.</li>
+					<li>Herbie se apaixona duas vezes no filme, uma vez por um Lancia Scorpio e outra por
+						um Fusca New Beetle no filme de 2005.</li>
+					<li>Herbie é o Fusca mais famoso do mundo.</li>
+				</ol>
+			</li><br>
+			<li><b>Buick Super Model 1955</b><br><br>
+				<img src="imagens/veiculos/respeito.png" alt="1955 Buick Super Model 52" width="400"
+					style="margin: 0 0 0 -50px;">
+				
+			</li>
+		</ol>
+		<br>
+		<ul class="ul-todo-2">
+			<li>Motos</li>
+			<li>Aviões</li>
+			<li>Ônibus</b></li>
+		</ul>
+
+		<footer>
+			<div class = "footer">
+				<a href="index.html" class="voltar">Vamos voltar para a página inicial</a>
+			</div>        
+		</footer>
+	</div>
+
+</body>

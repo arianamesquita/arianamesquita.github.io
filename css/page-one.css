@@ -1,0 +1,87 @@
+.header-page-one{
+    background-color: lightgray; 
+    border-radius: 50px; 
+    height: 180px;
+    margin: 10px 170px 10px 170px;
+}
+.h1-page-one{
+    margin: 30px 0px 10px 150px; 
+    padding-top: 30px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.h2-page-one{
+    margin: 25px 0px 10px 150px; 
+    padding-top: 20px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.div-page-one-1{
+    background-color: lightgray; 
+    border-radius: 30px; 
+    height: 1300px; 
+    margin: 30px 170px 0px 170px;
+}
+.h3-page-one{
+    margin: 30px 30px 10px 30px; 
+    padding-top: 30px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}
+.h4-page-one{
+    margin: 0px 30px 10px 30px; 
+    padding-top: 30px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}
+.p-page-one-1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 30px 30px 20px 30px;
+}
+.p-page-one-2{
+    margin: 20px 0px 0px 30px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.a-page-one{
+    margin: 20px 0px 0px 30px; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12;
+    font-weight: bold;
+    color: darkred;
+    background-color: rgba(145, 37, 37, 0.178);
+}
+.div-page-one-2{
+    margin: 30px 30px 0px 30px;
+}
+.h5-page-one{
+    margin: 20px 20px 20px 400px; 
+    font-family:'Times New Roman', Times, serif;
+}
+.p-page-one-3{
+    margin: 10px 20px 20px 400px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+}
+.p-page-one-4{
+    text-align: center;
+    margin: 10px 20px 20px 400px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.p-page-one-5{
+    text-align: right;
+    margin: 10px 20px 20px 400px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.h6-page-one{
+    margin: 10px 20px 20px 400px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.footer {
+    background-color: lightgray;
+    border-radius: 30px;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    padding-left: 100px;
+    height: 50px;
+}

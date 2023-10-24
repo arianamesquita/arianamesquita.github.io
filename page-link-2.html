@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<title>Segunda Página</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="imagens/icon2.svg">
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/page-link-2.css"/>
+</head>
+<body>
+	<nav id="menu"></nav>
+	<script>
+		fetch('menu.html')
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('menu').innerHTML = data;
+			});
+	</script>
+	<div class="div-page-link-2">
+		<img src="imagens/icon2.svg" height=100 border=1 style="margin:60px 0 0 700px; position: absolute; background-color: #EBE76C; ">
+		<a class="a-page-link-2" name="inicio"><h1 class="h1-page-link-2"><u>Sumario</u></h1></a>
+		<a class="a-page-link-2" href="#html"><h3 class="h3-page-link-2" >HTML</h3></a>
+		<a class="a-page-link-2" href="#css"><h3 class="h3-page-link-2" >CSS</h3></a>
+		<a class="a-page-link-2" href="#javascript"><h3 class="h3-page-link-2" >JavaScript</h3></a>
+		<a class="a-page-link-2" href="#frameworks"><h3 class="h3-page-link-2" >Frameworks web</h3></a>
+		<a class="a-page-link-2" href="#apis"><h3 class="h3-page-link-2" >APIs</h3></a>
+		<a class="a-page-link-2" href="#smarthome"><h3 class="h3-page-link-2" >Imagem Smart Home<h3></a>
+	</div>
+	<div class="div-page-link-2">
+	<a name="html" class="a-page-link-2"><h2 class="h2-page-link-2"><u>HTML</u></h2></a>
+	<p class="p-page-link-2">
+		<b>HTML (Linguagem de Marcação de HiperTexto)</b> é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. 			Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento 				(JavaScript) de uma página da web.
+			"Hipertexto" refere-se aos links que conectam páginas da Web entre si, seja dentro de um único site ou entre sites. Links são um aspecto 			fundamental da web. Ao carregar conteúdo na Internet e vinculá-lo a páginas criadas por outras pessoas, você se torna um participante ativo na 			world wide web.
+			<br>
+			<br>
+			Tim Berners-Lee (físico britânico) criou o HTML original (e outros protocolos associados como o HTTP), numa estação NeXTcube, usando o ambiente 			de desenvolvimento NeXTSTEP. Na época, a linguagem não era uma especificação, mas uma coleção de ferramentas para resolver um problema de Tim: 			a comunicação e disseminação das pesquisas entre ele e o seu grupo de colegas. A sua solução, combinada com a então emergente internet pública 			(que tornar-se-ia a Internet), ganhou atenção mundial.
+			<br>
+			<br>	
+			As primeiras versões do HTML foram definidas com regras sintáticas flexíveis, o que ajudou aqueles sem familiaridade com a publicação na Web. 			Através do tempo, a utilização de ferramentas para autoria de HTML aumentou, assim como a tendência em tornar a sintaxe cada vez mais rígida. 			Apesar disso, por questões históricas (retrocompatibilidade), os navegadores ainda hoje conseguem interpretar páginas web que estão longe de 			ser um código HTML válido.
+			<br>
+			<br>
+			A linguagem foi definida em especificações formais na década de 1990, inspiradas nas propostas originais de Tim Berners-Lee em criar uma 			linguagem baseada em SGML para a Internet. A primeira publicação foi esboçada por Berners-Lee e Dan Connolly e publicada em 1993 na IETF, como 			uma aplicação formal para o SGML (com uma DTD em SGML definindo a gramática). A IETF criou um grupo de trabalho para o HTML no ano seguinte, e 			publicou o HTML 2.0 em 1995. Desde 1996, as especificações HTML vêm sendo mantidas, com o auxílio de fabricantes de software, pelo World Wide 			Web Consortium (W3C). Apesar disso, em 2000 a linguagem tornou-se também uma norma internacional (ISO/IEC 15445:2000). A recomendação HTML 			4.01 foi publicada no final de 1999 pelo W3C. Uma errata ainda foi lançada em 2001.
+			<br>
+			<br>
+			Desde a publicação do HTML 3.5 no final de 1997, o grupo de trabalho da W3C tem cada vez mais — e de 2002 a 2006, de forma exclusiva — focado 			no desenvolvimento do XHTML, uma especificação HTML baseada em XML que é considerada pela W3C como um sucessor do HTML. O XHTML faz 				uso de uma sintaxe mais rigorosa e menos ambígua para tornar o HTML mais simples de ser processado e estendido.
+			<br>
+			<br>
+			Em janeiro de 2008 o W3C publicou a especificação do HTML5 como Working Draft. Apesar de sua sintaxe ser semelhante à de SGML, o HTML5 				abandonou qualquer tentativa de ser uma aplicação SGML e definiu explicitamente sua própria serialização "html", além de uma alternativa 			baseada em XML, o XHTML5.
+		</p>
+	<a href="#inicio" class="a-page-link-2"><h4 class="h4-page-link-2">Voltar para o inicio</h4></a>
+	<a name="css" class="a-page-link-2"><h2 class="h2-page-link-2" ><u>CSS</u></h2></a>
+	<p class="p-page-link-2">
+		<b>CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata)</b> é uma linguagem de estilo (en-US) usada para descrever a apresentação de um 				documento escrito em HTML ou em XML (incluindo várias linguagens em XML como SVG, MathML ou XHTML). O CSS descreve como elementos são mostrados 			na tela, no papel, na fala ou em outras mídias.<br>
+			<br>
+			CSS é uma das principais linguagens da open web e é padronizada em navegadores web de acordo com as especificação da W3C. Desenvolvido em 			níveis, o CSS1 está atualmente obsoleto, o CSS2.1 é uma recomendação e o CSS3, agora dividido em pequenos módulos, está progredindo para a sua 			padronização.<br>
+			<br>
+			Cascading Style Sheets (abreviado CSS) é um mecanismo para adicionar estilos (cores, fontes, espaçamento, etc.) a uma página web, aplicado 			diretamente nas tags HTML ou ficar contido dentro das tags &lt style &gt. Também é possível, adicionar estilos adicionando um link para um 			arquivo CSS que contém os estilos. Assim, quando se quiser alterar a aparência dos documentos vinculados a este arquivo CSS, basta modifica-			lo.<br>
+			<br>
+			Com a variação de atualizações dos navegadores, o suporte ao CSS pode variar. A interpretação dos navegadores pode ser avaliada com o teste 			Acid2, que se tornou uma forma base de revelar quão eficiente é o suporte de CSS, fazendo com que a nova versão em desenvolvimento do Firefox 			seja totalmente compatível a ele, assim como o Opera já é. O <code>Doctype</code> informado, ou a ausência dele, determina o <i>quirks</i> mode 			ou o <code>strict mode</code>, modificando o modo como o CSS é interpretado e a página desenhada.<br>
+	</p>
+	<a href="#inicio" class="a-page-link-2"><h4 h4 class="h4-page-link-2">Voltar para o inicio</h4></a>
+
+	<a name="javascript" class="a-page-link-2"><h2 class="h2-page-link-2"><u>JavaScript</u></h2></a>
+	<p class="p-page-link-2">
+		<b>JavaScript®</b> (às vezes abreviado para JS) é uma linguagem leve, interpretada e baseada em objetos com funções de primeira classe, mais 				JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e 			declarativos (como por exemplo a programação funcional). Saiba mais sobre o JavaScript.
+			<br>
+			Essa seção do site é dedicada à linguagem JavaScript e não às partes que são específicas para páginas Web e outros ambientes. Para mais 			informações sobre as APIs específicas para páginas Web, por favor consulte as seções Web APIs e DOM.<br>
+			<br>
+			JavaScript (frequentemente abreviado como JS) é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem 			dinâmica fraca e multiparadigma (protótipos, orientado a objeto, imperativo e funcional). Juntamente com HTML e CSS, o JavaScript é uma 			das três principais tecnologias da World Wide Web. JavaScript permite páginas da Web interativas e, portanto, é uma parte essencial dos 			aplicativos da web. A grande maioria dos sites usa, e todos os principais navegadores têm um mecanismo JavaScript dedicado para executá-lo.<br>
+			<br>
+			É atualmente a principal linguagem para programação client-side em navegadores web. É também bastante utilizada do lado do servidor através de 			ambientes como o node.js.<br>	
+			<br>
+			Como uma linguagem multiparadigma, o JavaScript suporta estilos de programação orientados a eventos, funcionais e imperativos (incluindo 			orientado a objetos e prototype-based), apresentando recursos como fechamentos (closures) e funções de alta ordem comumente indisponíveis em 			linguagens populares como Java e C++. Possui APIs para trabalhar com texto, matrizes, datas, expressões regulares e o DOM, mas a linguagem em 			si não inclui nenhuma E/S, como instalações de rede, armazenamento ou gráficos, contando com isso no ambiente host em que está embutido.<br>
+			<br>
+			Foi originalmente implementada como parte dos navegadores web para que scripts pudessem ser executados do lado do cliente e interagissem com o 			usuário sem a necessidade deste script passar pelo servidor, controlando o navegador, realizando comunicação assíncrona e alterando o conteúdo 			do documento exibido, porém os mecanismos JavaScript agora estão incorporados em muitos outros tipos de software host, incluindo em servidores 			e bancos de dados da Web e em programas que não são da Web, como processadores de texto e PDF, e em tempo de execução ambientes que 				disponibilizam JavaScript para escrever aplicativos móveis e de desktop, incluindo widgets de área de trabalho.<br>
+			<br>
+			Os termos Vanilla JavaScript e Vanilla JS se referem ao JavaScript não estendido por qualquer estrutura ou biblioteca adicional. Scripts 			escritos em Vanilla JS são códigos JavaScript simples.<br>
+			<br>
+			Embora existam semelhanças entre JavaScript e Java, incluindo o nome da linguagem, a sintaxe e as respectivas bibliotecas padrão, as duas 			linguagens são distintas e diferem muito no design; JavaScript foi influenciado por linguagens de programação como Self e Scheme.<br>
+			<br>
+			É baseada em ECMAScript, padronizada pela Ecma international nas especificações ECMA-262[8] e ISO/IEC 16262.
+		</p>
+	<a href="#inicio" class="a-page-link-2"><h4 class="h4-page-link-2">Voltar para o inicio</h4></a>
+
+	<a name="frameworks" class="a-page-link-2"><h2 class="h2-page-link-2"><u>Frameworks web</u></h2></a>
+	<p class="p-page-link-2">
+			As estruturas JavaScript são uma parte essencial do desenvolvimento front-end da Web moderna, que fornecem aos desenvolvedores ferramentas 			utilizadas e testadas para a criação de aplicativos Web interativos e escalonáveis. Muitas empresas modernas usam estruturas como parte padrão 			de suas ferramentas, portanto, muitos trabalhos de desenvolvimento front-end agora exigem experiência em estruturas.
+			<br>
+			Como um desenvolvedor front-end iniciante, pode ser difícil descobrir por onde começar ao aprender frameworks - com tantos frameworks 				diferentes para escolher, novos aparecem o tempo todo, geralmente funcionam de maneira semelhante, mas fazem algumas coisas de forma diferente, 			e há alguns cuidados específicos a serem seguidos ao se usar frameworks.
+			<br>
+			Neste conjunto de artigos, nosso objetivo é fornecer um ponto de partida confortável para ajudá-lo a começar a aprender frameworks. Não 			pretendemos ensinar exaustivamente tudo o que você precisa saber sobre o React / ReactDOM, ou Vue, ou algum outro framework específico; os 			próprios documentos das equipes do framework já fazem esse trabalho.
+			</p>
+		<h3 class="h3-page-link-2"><u>Bootstrap</u></h3>
+			<p class="p-page-link-2">
+			Se você é um desenvolvedor front-end, provavelmente já ouviu falar do Bootstrap. De acordo com o site oficial, o Bootstrap é um framework web 			front-end gratuito e de código aberto para projetar sites e aplicativos web. Ele contém modelos de design baseados em HTML e CSS para 				tipografia, formulários, botões, navegação e outros componentes de interface, bem como extensões JavaScript opcionais. Ao contrário de muitos 			frameworks da Web, ele se preocupa apenas com o desenvolvimento de front-end.<br>
+			<br>
+			O Bootstrap oferece a capacidade de criar layouts da Web flexíveis e responsivos com muito menos esforço.<br>
+			<br>
+			Bootstrap foi originalmente criado por um designer e um desenvolvedor do Twitter em meados de 2010. Antes de ser um framework de código aberto, 			o Bootstrap era conhecido como Twitter Blueprint.
+			</p>
+		<h3 class="h3-page-link-2"><u>React</u></h3>
+			<p class="p-page-link-2">
+			React é uma biblioteca front-end que utiliza JavaScript e foi criado pelo Facebook. Muito desenvolvedores consideram o React como framework 			devido a sua popularidade no seu ecossistema.<br>
+			<br>
+			O React é usado para construir interfaces de usuário e é conhecido por seu desempenho e flexibilidade. Ele permite que você crie componentes 			reutilizáveis ​​para que seu código seja fácil de manter. O React é um framework de código aberto e multiplataforma e está disponível para uso 			sob a licença do MIT.<br>			
+			<br>
+			Além disso, há uma demanda contínua por React no mercado, tudo indica que ele se manterá nos próximos anos.
+			</p>
+		<h3 class="h3-page-link-2"><u>Angular</u></h3>
+			<p class="p-page-link-2">
+			Angular é um framework para densenvolvimento front-end muito popular entre os desenvolvedores, o Angular é mantido pelo Google e foi lançado 			pela primeira vez em 2009 . É um framework de código aberto que usa TypeScript e JavaScript e é famoso por criar aplicativos de página 				única.<br>
+			<br>
+			Sites e aplicativos como eBay e Airbnb, Upwork, Lego, PayPal, Netflix usam o Angular, que reflete o quanto ele é poderoso em construção para 			escala.<br>
+			<br>
+			A curva de aprendizado pode ser íngreme, no entanto, e o código às vezes pode ser volumoso para compilar.
+			</p>
+		<h3 class="h3-page-link-2"><u>Vue</u></h3>
+			<p class="p-page-link-2">
+			Vue começou como um projeto individual e rapidamente se tornou um dos frameworks JS mais populares do mercado. Há muitas coisas legais sobre o 			Vue. Primeiro, é um framework de desenvolvimento web progressivo, o que significa que, se você tiver um projeto existente, poderá adotar o Vue 			para uma parte do projeto e tudo funcionará bem.<br>
+			<br>
+			Fornece muitos componentes que podem ajudá-lo a desenvolver uma interface de usuário perfeita. Ele também emprega vinculação de dados 				unidirecional e bidirecional.
+			</p>
+		</p>
+	<a href="#inicio" class="a-page-link-2"><h4 class="h4-page-link-2">Voltar para o inicio</h4></a>
+
+	<a name="apis" class="a-page-link-2"><h2 class="h2-page-link-2"><u>APIs</u></h2></a>
+		<p class="p-page-link-2">
+			As APIs (Application Programming Interfaces) são construções disponíveis nas linguagens de programação que permitem a desenvolvedores criar 			funcionalidades complexas mais facilmente. Tais construções abstraem o código mais complexo, proporcionando o uso de sintaxes mais simples em 			seu lugar.
+			<br>
+			Pense no seguinte exemplo: o uso de energia elétrica em sua casa ou apartamento. Quando você deseja utilizar um eletrodoméstico, você precisa 			somente ligar o aparelho na tomada. Não é preciso conectar diretamente o fio do aparelho diretamente na caixa de luz. Isso seria, além de muito 			ineficiente, difícil e perigoso de ser feito (caso você não seja eletricista).<br>
+			<br>
+			Em ciência da computação, a interface de programação de aplicações (do inglês application programming interface, abreviado API) é um conjunto 			de serviços/funções que foram implementadas em um programa de computador que são disponibilizados para que outros programas/aplicativos possam 			utiliza-los diretamente de forma simplificada; sem envolver-se em detalhes da implementação do programa de computador principal (função chamada 			de encapsulamento, usar as funcionalidades através de um código de programação simplificado).<br>
+			<br>
+			A API permitem utilizar características do software menos evidentes ao utilizador tradicional; por exemplo, um sistema operativo possui uma 			grande quantidade de funções na API, que permitem ao programador criar janelas, aceder a arquivos, codificar dados. Mas as APIs dos sistemas 			operativos costumam ser sem associação de tarefas mais essenciais, como a manipulação de blocos de memória e acesso a dispositivos. Essas 			tarefas são atributos do núcleo de sistema e raramente são programáveis. Outro exemplo são programas de desenho geométrico que possuem uma 			API específica para criar automaticamente entidades de acordo com padrões definidos pelo utilizador.<br>
+			<br>
+			Mais recentemente, o uso de API tem-se generalizado na forma de plugins (acessórios opcionais que complementam a funcionalidade de um 				programa). Os autores do programa principal fornecem uma API específica para que outros autores criem plugins, estendendo as funcionalidades do 			programa.<br>
+		</p>
+	<br>
+
+	<a href="#inicio" class="a-page-link-2"><h4 class="h4-page-link-2">Voltar para o inicio</h4></a>
+
+	<a name="smarthome" class="a-page-link-2"><img src="imagens/Smart home.svg" height=400 border=2 style="margin: 10px 0px 10px 20px;"></a><br>
+	<p class="p-page-link-2">Imagem Smart Home</p>
+	<a href="#inicio" class="a-page-link-2"><h4 class="h4-page-link-2">Voltar para o inicio</h4></a>
+
+	<p><a href="mailto:teste@gmail" target="_blank" class="a-page-link-2"><h4 class="h4-page-link-2">Fale com o autor</h4></a></p>
+	<br>
+	</div>	
+
+	<footer>
+        <div class = "footer">
+            <a href="index.html" class="voltar">Vamos voltar para a página inicial</a>
+        </div>        
+    </footer>
+</body>

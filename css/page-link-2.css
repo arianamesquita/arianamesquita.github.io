@@ -1,0 +1,50 @@
+.div-page-link-2{
+    margin:50px 170px 0 170px; 
+    background-color:#D8D9DA; 
+    border-radius: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #1C1C1C;
+}
+.a-page-link-2{
+    margin: 0px 0px 0px 30px; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12;
+    font-weight: bold;
+    color: darkred;
+    background-color: rgba(145, 37, 37, 0.178);
+}
+.h1-page-link-2{
+    margin: 0px 0px 10px 20px; 
+    padding-top: 10px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #1C1C1C;
+}
+.h3-page-link-2{
+    margin: 10px 0px 10px 20px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.h2-page-link-2{
+    margin: 0px 0px 10px 20px; 
+    padding-top: 30px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.p-page-link-2{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #1C1C1C;
+    text-align: justify;
+    margin:30px 40px 0 40px;
+}
+.h4-page-link-2{
+    margin: 10px 0px 10px 20px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.footer {
+    background-color: lightgray;
+    border-radius: 30px;
+    margin: 20px 170px 0 170px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 100px;
+    height: 50px;
+}

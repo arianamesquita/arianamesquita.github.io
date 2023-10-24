@@ -1,0 +1,16 @@
+.div_projeto_final{
+    margin: 10px 175px 10px 175px;
+    background-color: lightgray;
+    border-radius: 15px;
+}
+
+.div_projeto_final h1{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+}
+
+#projeto_final_1{
+    margin: 10px 0 0 50px;
+    border-style: dashed;
+    border-width: 2px;
+}

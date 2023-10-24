@@ -1,0 +1,108 @@
+/*definindo uma imagem no fundo, background*/
+body{
+    background-color: #3EECAC;
+    background-image: -webkit-linear-gradient(117deg, #3EECAC 0%, #EE74E1 100%);
+    background-image: -moz-linear-gradient(117deg, #3EECAC 0%, #EE74E1 100%);
+    background-image: -o-linear-gradient(117deg, #3EECAC 0%, #EE74E1 100%);
+    background-image: linear-gradient(117deg, #3EECAC 0%, #EE74E1 100%);
+    background-position: 100%;
+    margin: 0;
+}
+/*aqui começa a estilização do formulário definindo a margem do conteúdo principal criando recuo superior e laterais*/
+main{
+    margin: 10px 100px 0 100px;
+}
+/*estilização do fieldset colocando uma cor de fundo diferente do background da página, com uma cor da borda diferente, 
+borda em pontilhado, com as pontas arredondadas e com recuo de 1rem*/
+fieldset{
+    background-color: lightgray;
+    border-color: rgb(81, 75, 156);
+    border-style: dashed;
+    border-radius: 15px;
+    padding: 1rem;
+}
+/*estiliza o texto que aparece no fieldset colocando um fundo preto, texto em itálico, na cor branca, definindo a famíia
+da fonte, o tamanho da fonte e uma borda arredondada no fundo*/
+legend{
+    background-color: rgb(0, 0, 0);
+    font-style: italic;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18;
+    border-radius: 5px;
+}
+/*estiliza os inputs de texto para o fundo branco com corda arredondada e altura de 30px*/
+input{
+    background-color: white;
+    border-radius: 10px;
+    height: 30px;
+}
+/*cria o box para selecionar o professor para dar nota, estilizando a fonte do interior do box com a altura diferente
+a mesma cor do texto dos labels, coloca em negrito a borda arredondada para a caixa e a largura do campo para 750px*/
+select{
+    font-family: 'Trebuchet MS', 'Luida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16;
+    color: rgb(26, 54, 107);
+    font-weight: bold;
+    border-radius: 10px;
+    width: 750px;
+}
+/*estiliza os números de texto dos botões radio colocando eles em display alinhado com recuo superior e lateral dos 
+outros elementos ao redor, uma cor para diferenciar um pouco o fundo do texto atrás do número com bordas arredondadas
+que muda o mouse para uma mão quando em cima e cria um recuo maior entre o elemento e a próxima bolinha*/
+.radio-label {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #cec469;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+/*estiliza o input do tipo radio aumentando a altura e largura dele para 20px*/
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+/*estiliza a área de texto mudando a cor de fundo, colocando a borda arredondada, alterando a família da fonte, a 
+altura e colocando em negrito*/
+textarea{
+    background-color: rgb(181, 197, 207);
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 14;
+}
+/*estiliza o botão de enviar alterando a cor dele, a largura, a altura, a família da fonte, coloca em negrito, 
+muda a altura e a cor da fonte*/
+.enviar{
+    background-color: rgba(66, 104, 22, 0.863);
+    width: 125px;
+    height: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 14;
+    color: white;
+}
+/*estiliza o botão de limpar alterando a cor dele, a largura, a altura, a família da fonte, coloca em negrito, 
+muda a altura e a cor da fonte*/
+.limpar{
+    background-color: rgb(122, 0, 0);
+    width: 125px;
+    height: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 14;
+    color: white;
+}
+/*muda o alinhamento do p que coordena os botões colocando em bloco e um recuo na esquerda*/
+.botoes{
+    padding-left: 35%;
+    display: block;
+}
+.voltar{
+    background-color: blue;
+    height: 15px;
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: lightgray;
+}

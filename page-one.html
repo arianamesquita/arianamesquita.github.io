@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!--indica que estamos usando o HTML 5 aqui-->
+<html lang="pt-br"> <!--Aqui precisa mudar pra pt-br ou não traduz para outros idiomas-->
+<head> <!--cabeçalho da página, a aba do navegador-->
+    <meta charset="UTF-8"> <!--O UTF-8 garante que podemos utilizar pontuação-->
+    <title>Landing Page</title> <!--Título da página que aparece na aba do navegador-->
+    <link rel="shortcut icon" href="imagens/icon.svg"><!--Um ícone bonitinho pra página do navegador em
+    svg pra não perder a qualidade -->
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/page-one.css"/>
+</head>
+<body> <!--corpo da página - com uma cor-->
+    <nav id="menu"></nav>
+	<script>
+		fetch('menu.html')
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('menu').innerHTML = data;
+			});
+	</script>
+    <header class="header-page-one">
+        <img src="imagens/icon-cv-1.svg" width=100 style="margin: 30px 0px 10px 20px; position: absolute;">
+        <!--acima uma tag imagem, colocando um icone na página-->
+        <h1 class="h1-page-one">
+            <i><u>&nbspH1 - Título utilizando itálico e underline </u></i></h1>
+        <!--uma tag H1 que faz um título-->
+        <h2 class="h2-page-one">
+            <i>&nbsp H2 - Subtítulo utilizando itálico </i></h2>
+        <!--tag H2 que faz um subtítulo-->
+    </header> <!--usei um header pra organização e semântica, e porque eu sei algumas coisinhas, não me julgue-->
+    
+    <div class="div-page-one-1">
+        <h3 class="h3-page-one"><b><u>&nbspH3 - Título utilizando b de bold e underline </u></b></h3>
+        <!--tag h3 que usa uma fonte menor que a 1 e a 2 e maior que as demais, aqui fiz negrito (bold), a linha 
+        embaixo do texto (underline)-->
+        <h4 class="h4-page-one"><b><i><u>Lembrando que toda a documentação então está aqui, no texto da página.</u></i></b></h4>
+        <!--outro h4, usando style como o de cima porque precisava estilizar um pouco, usando underline, itálico
+        negrito-->
+        <h4 class="h4-page-one">H4 e considerando que estou utilizando div para manter o texto mais organizado e separado 
+            aqui sem utilizar bold. No head coloquei um link com um ícone e no header tem uma imagem
+            bem bacana. Vou colocar um font aqui embaixo.</h4>
+        <!--outro h4, usando style como o de cima porque precisava estilizar um pouco-->
+        <p class="p-page-one-1">Tag font utilizando face e style para usar o padding
+            e posicionar mantendo organizada a apresentação do texto enquanto explico o que rolou na aula. 
+            Colocar mais uma imagem aqui. Vamos <br>&nbsp &nbsp &nbsp &nbsp colocar o link bem aqui abaixo e vamos falar do link na outra
+            página. <strong><u>E tive que encher do código nbsp para conseguir alinhar aqui, não me julgue.
+            </u></strong>
+        </p>
+        <!--utilizando a tag font porque você ensinou e estilizei um tanto ela-->
+        <br><!--pular linha-->
+	<p class="p-page-one-2"><b>Próximos links de acesso irão para formulários, angular, css atente-se na escolha!</b></p><br>
+    <a href="index.html" class="a-page-one" target="_self"><b>Para conferir o CSS precisa clicar aqui!</b></a><br><br>
+    <a href="form1.html" class="a-page-one" target="_self"><b>Acesso ao Primeiro Formulário aqui!!</b></a><br><br>
+	<a href="form2.html" target="_self" class="a-page-one"><b>Acesso ao Segundo Formulário aqui!!</b></a><br>
+	<br><br> 
+    <a href="to-do-list.html" class="a-page-one" target="_self"><b>Aqui a lista não-ordenada - To-Do</b></a><br><br>
+    <a href="page-link.html" class="a-page-one" target="_self"><b>Vamos falar de link? Temos aqui uma primeira página.</b></a><br><br>
+    <a href="page-link-2.html" class="a-page-one" target="_self"><b>Aqui uma segunda página.</b></a><br>
+    <p class="p-page-one-2" target="_self"><b>Vamos aprender a instalar o Angular e iniciar um projeto? Clique na imagem para saber mais.</b></p>
+    <a title="Google, Public domain, via Wikimedia Commons" href="angular.html" 
+        class="a-page-one" target="_self"><img width="128" alt="Angular full color logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/512px-Angular_full_color_logo.svg.png"></a>
+    <!--uma tag que referencia pra outra página, estilização básica.-->
+    <div class="div-page-one-2"> <!--outra div pra organização em bloco-->
+        <img src="imagens/patos.png" width=350 style="margin: 10px 0px 30px 30px; position: absolute;">
+        <!--outra imagem agora porque precisava de uma png além das svg-->
+        <h5 class="h5-page-one"> A imagem do pato é legalzinha, estilo png. Os ícones são svg porque a renderização deles é diferente
+            e melhor independente do tamanho. Usando o position na imagem pra colocar o texto em frente a
+            ela e usando padding e margin pra posicionar os textos melhor na página. O font-family também 
+            já é &lt style &gt, então tá mais pra CSS atualmente.
+        </h5>
+        <!--um h5 que faz um texto com fonte menor-->
+        <p class="p-page-one-3" >
+                Utilizar um parágrafo ou tag &lt p &gt para colocar um texto no justify, então ele tem que ser
+                maior. Vamos comentar então sobre como a tag &lt font &gt já não se usa mais porque hoje já
+                é considerada CSS, e eu utilizei a tag &lt header &gt ali acima mesmo não utilizando as demais
+                como &lt footer &gt e &lt aside &gt ou outras tags do HTML 5 semântico. Decidi que esse 
+                período vou aprender mesmo o frontend então estou fazendo um curso de html, depois vou fazer o 
+                de CSS. Na continuação já fiz metade do JavaScript para fazer um Angular e um React depois, até
+                o final do período então aprendendo aqui na sala e fora dela.
+        </p>
+        <!--tag p de parágrafo para utilizar para utilizar o align que explicou em sala, aqui com o 
+        justificado, que funciona bem dentro de uma margem também-->
+        <p class="p-page-one-4" >
+                Outro parágrafo para agora então centralizar o texto.
+        </p>
+        <!--outra tag de parágrafo agora para centralizar o texto-->
+        <p class="p-page-one-5" ><b><i><s><u>Outro agora utilizando o bold, italico, subscrito e underline 
+            para colocar posicionado à direita.</u></s></i></b></p>
+        <!--outra tag de parágrafo para justificar à direita, usando negrito, italico, um sobrescrito que 
+        risca em cima do texto e um underline-->
+        <h6 class="h6-page-one">Agora aquele h6 com fonte pequenininha e vamos utilizar também o &lt sub &gt e o &lt 
+            sup &gt para mostrar como é possível, log <sub>2</sub> e um 2 <sup>2</sup>, ficou um texto bem mini. Agora 
+            vamos definir onde vai rolar um link. </h6>
+            <!--uma tag h6 com texto pequenininho e mostrando que também aprendemos a colocar o texto no
+            superior e abaixo do alinhamento normal, até fiz em log e potenciação.-->
+        <footer>
+            <div class = "footer">
+                <a href="index.html" class="voltar">Vamos voltar para a página inicial</a>
+            </div>        
+        </footer>
+        </div>
+    </div>
+</body>
+</html>

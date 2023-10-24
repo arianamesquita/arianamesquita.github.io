@@ -1,0 +1,168 @@
+/*estilização da primeira página feita com responsividade css, não necessariamente um menu responsivo, 
+mas a página responsiva*/
+.header {
+    background-color: lightgray;
+    border-radius: 15px;
+    padding-top: 15px;
+    height: 80px;
+}
+
+.footer {
+    background-color: lightgray;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 40px;
+}
+
+.nav-css{
+    width: 160px;
+    position: absolute;
+    margin: 0 10px 0 -180px;
+    background-color: rgb(48, 57, 112);
+    border-radius: 15px;
+    text-align: center;
+}
+
+h5{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    color: #fff;
+}
+
+.h1-intro-css{
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    text-align: center;
+}
+
+h4{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: black;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .corpo-css-1 {
+        background-color:cornflowerblue;
+        padding: 20px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+        margin: auto;
+    }
+
+    .h1-intro-css{
+        font-family: 'Courier New', Courier, monospace;
+        color: red;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    h4{
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+    }
+
+    h2{
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .p-css-1{
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .ul-css-1, .ol-css-1{
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .img-css-1{
+        position: absolute ;
+        margin: -50px 0 0 -20px;
+        background-color: rgb(240, 240, 141);
+        height: 35px;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .corpo-css-1 {
+
+        background-color:rgb(146, 126, 172);
+        padding: 200px;
+        padding-top: 20px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+        margin: auto;
+    }
+
+    .h1-intro-css{
+        font-family: 'Courier New', Courier, monospace;
+        color: red;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    h4{
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: black;
+        font-size: 16px;
+    }
+
+    h2{
+        font-size: 30px;
+        text-align: justify;
+    }
+
+    .p-css-1{
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .ul-css-1, .ol-css-1{
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .img-css-1{
+        position: absolute ;
+        margin: -80px 0 0 -15px;
+        background-color: rgb(240, 240, 141);
+        height: 65px;
+    }
+
+}
+#header {
+    background-color: lightgray;
+    border-radius: 15px;
+}
+
+.texto-principal{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightgray;
+    border-radius: 15px;
+}
+
+h2{
+    margin: 0 25px 25px 25px;
+    padding-top: 25px;
+}
+
+.p-css-1{
+    margin: 0 25px 25px 25px;
+}
+
+.ul-css-1, .ol-css-1{
+    margin: 0 30px 30px 30px;
+}
+
+a {
+    margin: 0 30px 30px 30px;
+}
