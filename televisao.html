@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Televisão</title>
+    <link rel="stylesheet" href="css/televisao.css">
+    <script src="js/controlarTV.js"></script>
+</head>
+<body>
+    <h1>Televisão</h1>
+    <img src="imagens/televisao.jpg" id="imagem" class="tv" height="400">
+    <br>
+    <img src="imagens/branco.jpg" id="televisao" class="branco" height="210">
+    <p>Ligar/Desligar</p>
+    <input type="button" value="On/Off" onclick="alternarEstado()">
+    <p>Volume</p>
+    <p id="volume" name="volume">1</p>
+    <input type="button" value="+" onclick="aumentar()">
+    <input type="reset" value="-" onclick="reduzir()">
+    <p>Canal</p>
+    <p id="canal" name="canal">1</p>
+    <input type="button" value="+" onclick="aumentarCanal()">
+    <input type="reset" value="-" onclick="reduzirCanal()">
+</body>
+<footer>
+    <br><br>    
+    <div class = "footer">
+        <a href="index.html" class="voltar">Vamos voltar para a página inicial</a>
+    </div>        
+</footer>
+</html>
