@@ -19,6 +19,7 @@ function aumentar(){
     if(volumeF >= 1 || volumeF == 0){
         volumeF++;
         document.getElementById("volume").textContent = volumeF;
+        toggleVolumeBar();
     } else alert("Não é possível reduzir mais o volume.")
 
 }
@@ -27,6 +28,7 @@ function reduzir(){
     if(volumeF >= 1){
         volumeF--;
         document.getElementById("volume").textContent = volumeF;
+        toggleVolumeBar();
     } else alert("Não é possível reduzir mais o volume.")
 }
 function aumentarCanal(){
@@ -62,4 +64,21 @@ function controlarCanal(canal2){
             document.getElementById("televisao").src="imagens/CNN.png";
             break;
     }
+}
+function alterarVolume() {
+    var volumeRange = document.getElementById("volumeRange");
+    volumeF = volumeRange.value;
+    document.getElementById("volume").textContent = volumeF;
+}
+function toggleVolumeBar() {
+    var volumeBar = document.getElementById("volumeRange");
+    var volumeNumber = document.getElementById("volume");
+
+    volumeBar.style.display = "block";
+    volumeNumber.style.display = "block";
+
+    setTimeout(function () {
+        volumeBar.style.display = "none";
+        volumeNumber.style.display = "none";
+    }, 2000);
 }
